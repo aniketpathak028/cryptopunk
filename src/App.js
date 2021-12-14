@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from './components/Header';
 import './App.css'
-import CollectionCard from './components/CollectionCard';
 import PunkList from './components/PunkList';
 import axios from "axios";
 
