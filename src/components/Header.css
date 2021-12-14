@@ -1,0 +1,10 @@
+.header {
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 200px;
+}
