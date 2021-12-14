@@ -12,6 +12,7 @@
 
 .header > div {
   margin: 10px;
+  cursor: pointer;
 }
 
 .searchBar {
@@ -24,7 +25,7 @@
 }
 
 .searchIconContainer {
-  margin: 10px;
+  margin: 13px;
 }
 
 .searchInput {
