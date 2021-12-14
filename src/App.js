@@ -3,6 +3,7 @@ import Header from './components/Header';
 import './App.css'
 import PunkList from './components/PunkList';
 import axios from "axios";
+import Main from "./components/Main";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         traits={[{ value: 7 }]}
         img="https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
       /> */}
+      <Main />
       <PunkList punkListData={punkListData}/>
     </div>
   );
