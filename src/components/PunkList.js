@@ -1,13 +1,11 @@
 import React from "react";
 import CollectionCard from './CollectionCard'
 import './PunkList.css'
-import { Scrollbars } from "react-custom-scrollbars";
+import HorizontalScroll from "react-horizontal-scrolling";
 
 function PunkList({ punkListData, selectPunk }) {
   return (
-    <Scrollbars
-      style={{ width: 1600, height: 500 }}
-    >
+    <HorizontalScroll>
       <div className="punkList">
         {punkListData.map((punk) => {
           return (
@@ -23,7 +21,7 @@ function PunkList({ punkListData, selectPunk }) {
           );
         })}
       </div>
-    </Scrollbars>
+    </HorizontalScroll>
   );
 }
 

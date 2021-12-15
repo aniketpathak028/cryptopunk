@@ -6,6 +6,7 @@ import "./Main.css";
 
 export default function Main({ selectedPunk, punkListData }) {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
+  console.log(punkListData);
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk]);
   }, [selectedPunk, punkListData]);
@@ -35,7 +36,9 @@ export default function Main({ selectedPunk, punkListData }) {
             <div className="ownerDetails">
               <div className="ownerNameAndHandle">
                 <div className="ownerAddress">{activePunk.owner.address}</div>
-                <div className="ownerHandle"></div>
+                <div className="ownerHandle">
+                  @{activePunk.owner.user.username}
+                </div>
               </div>
               <div className="ownerLink">
                 <img src={instagramLogo} />

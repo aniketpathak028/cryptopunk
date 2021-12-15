@@ -24,7 +24,6 @@ function App() {
   }, []);
 
   return (
-    
     <div className="app">
       <Header />
       {punkListData.length > 0 && (
