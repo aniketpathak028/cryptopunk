@@ -8,8 +8,10 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
     "react": "^17.0.2",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-scroll-horizontal": "^1.6.6",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

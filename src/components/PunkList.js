@@ -1,13 +1,17 @@
 import React from "react";
 import CollectionCard from './CollectionCard'
 import './PunkList.css'
+import { Scrollbars } from "react-custom-scrollbars";
 
-function PunkList({ punkListData }) {
+function PunkList({ punkListData, selectPunk }) {
   return (
-    <div className="punkList">
-          {punkListData.map((punk) => {
+    <Scrollbars
+      style={{ width: 1600, height: 500 }}
+    >
+      <div className="punkList">
+        {punkListData.map((punk) => {
           return (
-            <div key={punk.token_id}>
+            <div key={punk.token_id} onClick={() => selectPunk(punk.token_id)}>
               <CollectionCard
                 key={punk.token_id}
                 id={punk.token_id}
@@ -17,8 +21,9 @@ function PunkList({ punkListData }) {
               />
             </div>
           );
-      })}
-    </div>
+        })}
+      </div>
+    </Scrollbars>
   );
 }
 
