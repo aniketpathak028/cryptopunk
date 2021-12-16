@@ -4,6 +4,7 @@ import "./App.css";
 import PunkList from "./components/PunkList";
 import axios from "axios";
 import Main from "./components/Main";
+import savedData from './assets/data/data.json'
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
@@ -30,7 +31,7 @@ function App() {
         <>
           <Main punkListData={punkListData} selectedPunk={selectedPunk} />
           <PunkList
-            punkListData={punkListData}
+            punkListData={savedData}
             selectPunk={selectPunkHandler}
           />
         </>
