@@ -29,11 +29,8 @@ function App() {
       <Header />
       {punkListData.length > 0 && (
         <>
-          <Main punkListData={punkListData} selectedPunk={selectedPunk} />
-          <PunkList
-            punkListData={savedData}
-            selectPunk={selectPunkHandler}
-          />
+          <Main punkListData={savedData} selectedPunk={selectedPunk} />
+          <PunkList punkListData={savedData} selectPunk={selectPunkHandler} />
         </>
       )}
     </div>
