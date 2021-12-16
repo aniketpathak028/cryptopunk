@@ -27,12 +27,10 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {punkListData.length > 0 && (
         <>
           <Main punkListData={savedData} selectedPunk={selectedPunk} />
           <PunkList punkListData={savedData} selectPunk={selectPunkHandler} />
         </>
-      )}
     </div>
   );
 }
